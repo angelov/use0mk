@@ -1,0 +1,60 @@
+/**
+ * use0mk.class.php v1.0
+ *
+ * 0.mk - Shorten your links!
+ * http://0.mk
+ * 
+ * 0.mk API Documentation: http://0.mk/api
+ * 
+ * Newer versions of this class will be available on http://0.mk/use0mk
+ */
+ 
+USAGE:
+
+Include the class:
+
+	include('use0mk.class.php');
+
+Create an object for the class:
+
+	$use0mk = new use0mk();
+
+If you want to login to the service add your username and apikey as parameters
+when you're creating the object.
+
+	example:
+	$use0mk = new use0mk("0mkapi", "1a7854a2226925282e54d1a01af5058c");
+
+
+Actions:
+
+- Shortening long link:
+
+	example:
+	$use0mk->shortenUrl("http://google.com/");
+	
+	If the shortening is sucessful the function will return the short link.
+	If not, you'll get the same link that you inserted.
+	
+- Previewing short link:
+
+	example:
+	$use0mk->previewUrl("http://0.mk/example");
+	
+	If the link is valid and exists in the database the function will return the 
+	short link.
+	If not, you'll get the same link that you inserted.
+	
+- Shortening all long links in a string:
+
+	example:
+	$use0mk->shortenAll("Links in string: http://google.com/ http://yahoo.com");
+	
+	All links in the inserted string will be sent for shortening and the old long
+	links will be replaced with the new short ones. 
+	If shortening of some of the links is unsucessful, this link won't be replaced.
+	
+	
+For newer versions of the class check http://0.mk/use0mk
+
+Happy shortening :)
