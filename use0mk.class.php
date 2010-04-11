@@ -1,12 +1,14 @@
 <?php
 
 /**
+ * use0mk.class.php v1.0
+ *
  * 0.mk - Shorten your links!
  * http://0.mk
  * 
  * 0.mk API Documentation: http://0.mk/api
  * 
- * New versions of this class will be available on http://0.mk/use0mk
+ * Newer versions of this class will be available on http://0.mk/use0mk
  */
  
 class use0mk {
