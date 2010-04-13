@@ -42,7 +42,7 @@ Actions:
 	$use0mk->previewUrl("http://0.mk/example");
 	
 	If the link is valid and exists in the database the function will return the 
-	short link.
+	long link.
 	If not, you'll get the same link that you inserted.
 	
 - Shortening all long links in a string:
